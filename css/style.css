@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background: #000;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../media/queenstown-large.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+.textblock-float {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 1rem;
+    margin:1rem;
+    float: left;
+    font-size: 1.6rem;
+}
+.textblock {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 1rem;
+    margin:1rem;
+    font-size: 1.6rem;
+}
+div {
+    word-wrap: break-word;
+}
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+  	text-align: center;
+}
+h2 {
+    color: white;
+  	text-align: center;
+}
+h3 {
+    color: white;
+  	text-align: center;
+}
+h4 {
+    color: white;
+  	text-align: center;
+}
+h5 {
+    color: white;
+  	text-align: center;
+}
+h6 {
+    color: white;
+  	text-align: center;
+}
+p {
+  color: white;
+}
+
+.button-class {
+    display: block;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+}
+
+#pause-button-id {
+}
+
+#mute-button-id {
+}
+
+.textblock button-class:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .6s background;
+}
+
+a:hover{
+    background:rgba(0,0,0,0.9);
+}
+
+.float
+{
+	float: left;
+	margin-bootom: 10px;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    div{width:70%;}
+}
+
+@media screen and (max-device-width: 800px) {
+    html { background: url(../media/queenstown-large.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+}
+
+#places-background-id {
+  background-image: url('../media/background-places-to-visit.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 120%;
+  height: 120%;
+  overflow: auto;
+}
+
+#accommodation-background-id {
+  background-image: url('../media/background-accommodation.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 120%;
+  height: 120%;
+  overflow: auto;
+}
+
+#gallery-background-id {
+  background-image: url('../media/background-gallery.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 120%;
+  height: 120%;
+  overflow: auto;
+}
+
+#newsletter-signup-background-id {
+  background-image: url('../media/background-newsletter-signup.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 120%;
+  height: 120%;
+  overflow: auto;
+}
+
+#labelErrorFirstName{
+   color: red;
+}
+#labelErrorLastName{
+	color: red;
+}
+#labelErrorEmail{
+	color: red;
+}
+#labelErrorAgreement{
+	color: red;
+}
+
+
+.container{
+    width:800px;
+    height:400px;
+    padding:20px;
+    border:1px solid gray;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background: black;
+}
+.image-slider-wrapper{
+    overflow: hidden;
+}
+#image_slider{
+    position: relative;
+    height: 280px;
+    padding:0;
+}
+#image_slider li{
+    max-width: 100%;
+    float:left;
+    list-style: none;
+}
