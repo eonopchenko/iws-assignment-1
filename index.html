@@ -8,7 +8,7 @@
 		<title>Queenstown, New Zealand | Official Site</title>
 	</head>
 	<body>
-		<video poster="./media/queenstown-large.jpg" id="bgvid" playsinline autoplay loop>
+		<video class="video" poster="./media/queenstown-large.jpg" id="bgvid" playsinline autoplay loop>
 			<source src="./media/Discover - Queenstown - In 4K.mp4" type="video/mp4">
 		</video>
 
@@ -145,37 +145,19 @@
 				var pauseButton = document.querySelector("#pause-button-id");
 				var muteButton = document.querySelector("#mute-button-id");
 
-				if (window.matchMedia('(prefers-reduced-motion)').matches)
-				{
-					vid.removeAttribute("autoplay");
-					vid.pause();
-					pauseButton.innerHTML = "Paused";
-				}
-
-				function vidFade()
-				{
-				  vid.classList.add("stopfade");
-				}
-
-				vid.addEventListener('ended', function()
-				{
-						vid.pause();
-						vidFade();
-				});
-
 				pauseButton.addEventListener("click", function()
 				{
-				  vid.classList.toggle("stopfade");
-				  if (vid.paused)
+					vid.classList.toggle("stopfade");
+					if (vid.paused)
 					{
 						vid.play();
 						pauseButton.className = "button-class glyphicon glyphicon-pause";
-				  }
+					}
 					else
 					{
 						vid.pause();
 						pauseButton.className = "button-class glyphicon glyphicon-play";
-				  }
+					}
 				})
 
 				muteButton.addEventListener("click", function()

@@ -1,8 +1,18 @@
+/**
+ * @file style.css
+ */
+ 
+/**
+ * @brief Page background settings
+ */
 body {
     margin: 0;
     background: #000;
 }
 
+/**
+ * @brief Background video settings
+ */
 video {
     position: fixed;
     top: 50%;
@@ -18,10 +28,16 @@ video {
     transition: 1s opacity;
 }
 
+/**
+ * @brief Background video fade mode opacity
+ */
 .stopfade {
     opacity: .5;
 }
 
+/**
+ * @brief Transparent text block settings (floating pictures)
+ */
 .textblock-float {
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
     font-weight:100;
@@ -29,9 +45,13 @@ video {
     color: white;
     padding: 1rem;
     margin:1rem;
-    float: left;
     font-size: 1.6rem;
+    float: left;
 }
+
+/**
+ * @brief Transparent text block settings
+ */
 .textblock {
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
     font-weight:100;
@@ -41,9 +61,17 @@ video {
     margin:1rem;
     font-size: 1.6rem;
 }
+
+/**
+ * @brief Row wrapping
+ */
 div {
     word-wrap: break-word;
 }
+
+/**
+ * @brief Level 1 headings settings
+ */
 h1 {
     color: white;
     font-size: 3rem;
@@ -52,30 +80,57 @@ h1 {
     letter-spacing: .3rem;
   	text-align: center;
 }
+
+/**
+ * @brief Level 2 headings settings
+ */
 h2 {
     color: white;
   	text-align: center;
 }
+
+/**
+ * @brief Level 3 headings settings
+ */
 h3 {
     color: white;
   	text-align: center;
 }
+
+/**
+ * @brief Level 4 headings settings
+ */
 h4 {
     color: white;
   	text-align: center;
 }
+
+/**
+ * @brief Level 5 headings settings
+ */
 h5 {
     color: white;
   	text-align: center;
 }
+
+/**
+ * @brief Level 6 headings settings
+ */
 h6 {
     color: white;
   	text-align: center;
 }
+
+/**
+ * @brief Paragraph settings
+ */
 p {
   color: white;
 }
 
+/**
+ * @brief Video control buttons settings
+ */
 .button-class {
     display: block;
     padding: .4rem;
@@ -95,10 +150,16 @@ p {
 #mute-button-id {
 }
 
+/**
+ * @brief Buttons mouse entering (hover) settings
+ */
 .textblock button-class:hover {
     background: rgba(0,0,0,0.5);
 }
 
+/**
+ * @brief Hyperlinks settings
+ */
 a {
     display: inline-block;
     color: #fff;
@@ -107,26 +168,25 @@ a {
     transition: .6s background;
 }
 
-a:hover{
-    background:rgba(0,0,0,0.9);
+/**
+ * @brief Hyperlinks mouse entering (hover) settings
+ */
+a:hover {
+    background:rgba(0,0,0,0.5);
 }
 
-.float
-{
+/**
+ * @brief Picture floating settings
+ */
+.float {
 	float: left;
 	margin-bootom: 10px;
 	margin-right: 10px;
 }
 
-@media screen and (max-width: 500px) {
-    div{width:70%;}
-}
-
-@media screen and (max-device-width: 800px) {
-    html { background: url(../media/queenstown-large.jpg) #000 no-repeat center center fixed; }
-    #bgvid { display: none; }
-}
-
+/**
+ * @brief Places to Visit page background settings
+ */
 #places-background-id {
   background-image: url('../media/background-places-to-visit.jpg');
   background-repeat: repeat;
@@ -138,6 +198,9 @@ a:hover{
   overflow: auto;
 }
 
+/**
+ * @brief Accommodation page background settings
+ */
 #accommodation-background-id {
   background-image: url('../media/background-accommodation.jpg');
   background-repeat: repeat;
@@ -149,6 +212,9 @@ a:hover{
   overflow: auto;
 }
 
+/**
+ * @brief Gallery page background settings
+ */
 #gallery-background-id {
   background-image: url('../media/background-gallery.jpg');
   background-repeat: repeat;
@@ -160,6 +226,9 @@ a:hover{
   overflow: auto;
 }
 
+/**
+ * @brief Newsletter Signup page background settings
+ */
 #newsletter-signup-background-id {
   background-image: url('../media/background-newsletter-signup.jpg');
   background-repeat: repeat;
@@ -171,40 +240,42 @@ a:hover{
   overflow: auto;
 }
 
-#labelErrorFirstName{
+/**
+ * @brief First Name input error label color
+ */
+#labelErrorFirstName {
    color: red;
 }
-#labelErrorLastName{
-	color: red;
-}
-#labelErrorEmail{
-	color: red;
-}
-#labelErrorAgreement{
+
+/**
+ * @brief Last Name input error label color
+ */
+#labelErrorLastName {
 	color: red;
 }
 
+/**
+ * @brief Email input error label color
+ */
+#labelErrorEmail {
+	color: red;
+}
 
-.container{
-    width:800px;
-    height:400px;
-    padding:20px;
-    border:1px solid gray;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    background: black;
+/**
+ * @brief Agreement input error label color
+ */
+#labelErrorAgreement {
+	color: red;
 }
-.image-slider-wrapper{
-    overflow: hidden;
+
+/**
+ * @brief Media-requests to define background video behaviour
+ */
+@media screen and (max-device-width: 800px) {
+    html { background: url(../media/queenstown-large.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
 }
-#image_slider{
-    position: relative;
-    height: 280px;
-    padding:0;
-}
-#image_slider li{
-    max-width: 100%;
-    float:left;
-    list-style: none;
+
+@media screen and (max-width: 500px) {
+    div{width:70%;}
 }

@@ -75,8 +75,8 @@
 		<script type="text/javascript">
 			var i = 0;
 			var path = new Array();
-			var descr = document.getElementById('description');
 			var descriptions = new Array();
+			var descr = document.getElementById('description');
 
 			path[0] = "./media/gallery-001.webp";
 			path[1] = "./media/gallery-002.webp";
@@ -112,10 +112,10 @@
 
 			function swapImage()
 			{
-			   document.slide.src = path[i];
-				 descr.innerHTML = descriptions[i];
-				 i = (i < path.length - 1) ? i + 1 : 0;
-			   setTimeout("swapImage()", 5000);
+				document.slide.src = path[i];
+				descr.innerHTML = descriptions[i];
+				i = (i < path.length - 1) ? i + 1 : 0;
+				setTimeout("swapImage()", 5000);
 			}
 			window.onload=swapImage;
 		</script>
